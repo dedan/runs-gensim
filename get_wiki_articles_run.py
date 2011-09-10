@@ -48,7 +48,7 @@ def main(param_file=None):
         logger.info("working on file: %s" % f_name)
 
         # try to convert the word into ascii for the http query
-        file_obj = codecs.open(f, "r", "utf-16")
+        file_obj = codecs.open(f, "r", "utf-8")
         counter = 0
         words = []
         for w in file_obj.readlines():
