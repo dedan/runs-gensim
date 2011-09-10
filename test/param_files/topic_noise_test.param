@@ -1,4 +1,5 @@
 
+save_as_txt     = True
 dict_extension  = 'dic.dict'
 base_path       = './test/data/'
 result_path     = 'results/'

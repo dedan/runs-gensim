@@ -4,3 +4,4 @@
 .pydevproject
 .settings/*
 param_files/*
+test/data/results/*

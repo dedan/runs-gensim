@@ -55,7 +55,9 @@ def main(param_file=None):
         corpus = [lsi[pre[dictionary.doc2bow(val['text'])]]
                     for val in query.itervalues()]
         sim_res = MatrixSimilarity(corpus)[corpus]
-        sim_res.save(path.join(output_dir, 'sim_' + query_key))
+        if p['save_as_txt']:
+            np.savetxt(path.join(output_dir, 'sim_' + query_key + '.txt'),
+                       sim_res)
         avg = np.mean(sim_res, axis=0)
         idx = np.argsort(avg)
         times[count] = time.time() - t0
