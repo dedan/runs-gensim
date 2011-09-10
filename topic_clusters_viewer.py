@@ -55,15 +55,16 @@ for key, val in data.iteritems():
     Z = linkage(Y)
     dendrogram(Z)
     
-    plt.subplot(3, 1, 2)
+    ax = plt.subplot(3, 1, 2)
     
 
     for i in range(proj.shape[1]):
         col = (1 - (val['ratings'][i] / 100.0)) * 0.7
-        pt, = plt.plot(proj[0, i], proj[1, i],
+        pt, = ax.plot(proj[0, i], proj[1, i],
                        '.',
                        color=('%f' % col),
                        picker=3)
+        ax.text(proj[0, i], proj[1, i], i)
         pt.name = val['keys'][i]
 
     plt.subplot(3, 1, 3)
