@@ -4,7 +4,7 @@
 
 get the wikipedia articles for lists of words provided in textfiles
 
-these textfiles have to be together in one folder. Necessary is also a 
+these textfiles have to be together in one folder. Necessary is also a
 reference.queries file in the same folder which contains the human ratings.
 
 Output is an articles.pickle file that can later be investigated with e.g.
@@ -115,13 +115,16 @@ def main(param_file=None):
 
     #add human rating to the wikipedia data
     not_found = []
-    with open(os.path.join(sparql_path, p['human_file'])) as f:
+    with open(os.path.join(base_path,
+                           p['folder_path'],
+                           p['human_file'])) as f:
         for line in f.readlines():
             arr = line.split()
             word = id_word[arr[0]]
             term = arr[3]
             try:
-                articles[word][term]['rating'] = int(arr[4])
+                articles[word][term]['rating'] = float(arr[4])
+
             except KeyError:
                 not_found.append(term)
     logger.info("%d words from the ref queries not found" % len(not_found))
