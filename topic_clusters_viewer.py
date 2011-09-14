@@ -52,14 +52,11 @@ for key, val in data.iteritems():
     plt.title(key)
 
     proj = np.dot(val['U'][:, 0:2].T, val['vecs'])
-
-    print np.shape(proj)
     Y = pdist(proj.T)
     Z = linkage(Y)
     dendrogram(Z)
-    
     ax = plt.subplot(3, 1, 2)
-    
+
 
     for i in range(proj.shape[1]):
         col = (1 - (val['ratings'][i] / 100.0)) * 0.7
@@ -72,5 +69,5 @@ for key, val in data.iteritems():
 
     plt.subplot(3, 1, 3)
     plt.plot(val['d'])
-    plt.savefig(key + ".png")
+    plt.savefig(path.join(output_dir, key + ".png"))
 #    plt.show()
