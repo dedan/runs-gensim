@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-wp2txt2json.py
+    input are textfiles created by the wp2txt tool from:
+    http://wp2txt.rubyforge.org/
 
-Created by Stephan Gabler on 2011-06-09.
-Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+    output is a json corpus of the same
+
 """
 
 from os import path

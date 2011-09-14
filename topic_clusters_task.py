@@ -1,7 +1,12 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-clusters.py
+    input is an articles.pickle created with get_wiki_articles
+    input is a LSI model (created with LSI model run)
+    input is a preprocessing model
+    input is a dictionary
+
+    output is a data.pickle that can be visualized with the viewer
 
 with get_wiki_articles I download the wikipedia articles for all results of a
 sparql query. These articles are then transformed to an lsi space and

@@ -1,7 +1,7 @@
 '''
-Created on 15.07.2011
-
-@author: dedan
+    I use this file always as a base when I write a new task or run that
+    should be used with sumatra. Just to not type the same things over and
+    over.
 '''
 
 from os import path

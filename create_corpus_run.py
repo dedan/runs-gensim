@@ -1,5 +1,13 @@
 '''
-Created on 27.06.2011
+
+create a corpus in MatrixMarket format. Input can be a jsoncorpus or
+textfiles corpus. In my cases the text of json files were comming from
+parsing the wikipedia. This script then creates a dictionary and from there
+a corpus.
+
+A jsoncorpus can for example be created by wp2txt2json.py
+
+If selected preprocessing steps (stoplist, stemming) are applied.
 
 @author: dedan
 '''

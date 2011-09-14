@@ -36,6 +36,11 @@ def get_logger(module, fname):
     return logger
 
 def setup(param_file=None):
+    """
+        sumatra setup
+
+        read in the parameter file and create output directory
+    """
     if param_file:
         p = build_parameters(param_file)
         base_path = path.join(path.dirname(__file__), 'test', 'data')
@@ -51,6 +56,10 @@ def setup(param_file=None):
 
 
 def tag(sentence, senna_path):
+    """
+        tag sentences using the SENNA algorithm of ronan collobert
+        http://ronan.collobert.com/
+    """
 
     p = sp.Popen(['blabla', '-path',  senna_path],
                  executable=os.path.join(senna_path, 'senna'),

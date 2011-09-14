@@ -5,6 +5,14 @@ model_dim.py
 
 do lower dim analysis on a higher dim model
 
+input is a LSI model with N dimensions (created with LSI model run)
+input is a preprocessing model
+input is a dictionary
+
+This run then evaluates the
+performance of the model on the lee corpus and similarity rates for models
+which use only the first m < N eigenvectors of the model.
+
 """
 import matplotlib
 matplotlib.use("Agg")

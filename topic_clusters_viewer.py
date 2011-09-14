@@ -2,10 +2,13 @@
 # encoding: utf-8
 
 '''
-clusters viewer
+
+    input is the data.pickle from the topic_cluster_task
+    output are png images of the figures
 
 The points in the plots are colored (grayscaled) by the value
-a human gave as rating of how good this term fits the sparqle query termn.
+a human gave as rating of how good this term fits the sparqle query termn. 
+The plot in the top shows the output of a hierarchical clustering algorithm
 '''
 import numpy as np
 import pylab as plt

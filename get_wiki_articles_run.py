@@ -2,9 +2,18 @@
 # encoding: utf-8
 """
 
+get the wikipedia articles for lists of words provided in textfiles
 
-Created by Stephan Gabler on 2011-05-12.
-Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+these textfiles have to be together in one folder. Necessary is also a 
+reference.queries file in the same folder which contains the human ratings.
+
+Output is an articles.pickle file that can later be investigated with e.g.
+    * topic_clusters_task
+    * topic_noise_task
+
+further output is the file info.pickle which contains information on
+missing words, etc..
+
 """
 
 from gensim.corpora import wikicorpus

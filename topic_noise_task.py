@@ -2,9 +2,18 @@
 # encoding: utf-8
 """
 
+    input is articles.pickle from the get_wiki_articles script
+    input is a LSI model (created with LSI model run)
+    input is a preprocessing model
+    input is a dictionary
+
+    output are graphs showing the correlation of average similarity
+    between articles in the LSI space and a human rating
+    if the flat is set in the param file, the similarity matrices will be
+    stored in text format (e.g. for further usage with R)
+
 correlate wikipedia article similarity with human perceived similarity of terms
 
-Created by Stephan Gabler on 2011-05-12.
 """
 
 from gensim import models, matutils

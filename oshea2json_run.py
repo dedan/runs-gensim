@@ -3,9 +3,9 @@
 """
   annotate the oshea corpus and store it in a better to access json format
 
+  the data for the corpus is taken from this pdf
+  http://www2.docm.mmu.ac.uk/STAFF/J.Oshea/TRMMUCCA20081_5.pdf
 
-  Created by Stephan Gabler on 2011-06-09.
-  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 """
 
 import codecs

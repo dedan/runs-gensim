@@ -1,7 +1,15 @@
 '''
-Created on 15.07.2011
+
+input is a LSI model (created with LSI model run)
+input is a preprocessing model
+input is a dictionary
 
 reimplement the fridolin paper
+
+evaluate one of our trained models with the data from the fridolin paper
+
+Parameters driving effectiveness of automated essay scoring with LSA
+citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.87.4534&rep=rep1&type=pdf
 
 @author: dedan
 '''

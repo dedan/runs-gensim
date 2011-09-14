@@ -3,6 +3,12 @@
 
 """
     This run produces an LSI model with Tfidf or log_entropy preprocessing.
+
+    input is a dictionary and a corpus in MatrixMarket format.
+
+    output is the preprocessing and the LSI model
+
+    the run also directly evaluates the quality of the model on the lee data
 """
 
 from datetime import datetime
